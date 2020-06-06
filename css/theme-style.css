@@ -1,7 +1,22 @@
+@font-face
+{
+    font-family:'Manrope';
+    src:url('./fonts/Manrope-Medium.ttf');
+
+}
+
+@font-face
+{
+    font-family:'ManropeLight';
+    src:url('./fonts/Manrope-ExtraLight.ttf');
+
+}
+
+
 html, body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Manrope";
     font-size: 100%;
-    background-color: #FFF;
+    background-color: #ffffff;
 }
 body a{
 	transition:0.5s all;
@@ -13,6 +28,7 @@ body a{
 /*-----start-header----*/
 .logo{
 	float:left;
+	max-width: 50px;
 }
 .logo a{
 	color: #FFF;
@@ -27,7 +43,7 @@ body a{
 }
 /*----navbar-nav----*/
 .top-nav ul li a{
-	color: #000000;
+	color: #fff;
 	padding: 0.2em 1.9em;
 	font-size: 0.875em;
 	font-weight: 400;
@@ -46,7 +62,7 @@ body a{
 }
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
-	color:#F4BB36;
+	color:rgb(175, 136, 44);
 }
 .logo a{
 	display:block;
@@ -75,7 +91,7 @@ nav li {
 	position:relative;
 }
 nav a {
-	color: #fff;
+	color: #011222;
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
@@ -87,6 +103,29 @@ nav a:hover{
 }
 nav a#pull {
 	display: none;
+}
+
+.navColor{
+	background-color: #011222!important;
+}
+
+.nav-btn button{
+	display: inline-block;
+	top: 29%;
+	right: 0;
+	margin-top: 16px;
+	padding-right: 10px;
+	background-color: rgb(175, 136, 44);
+	border-color: rgb(175, 136, 44) ;
+	border-radius: 200px;
+}
+
+.nav-btn a{
+	color: rgb(175, 136, 44);
+	margin-top: 22px;
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
 }
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 768px) {
@@ -369,24 +408,29 @@ nav a#pull {
 	border:2px solid #F4BB36;
 }
 .slide-text-info h1{
+	padding-top: 20px;
 	font-size: 3.2em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'ManropeLight';
 	font-weight: 700;
-	text-transform: uppercase;
 }
 .slide-text-info h1 span{
-	color:#F4BB36;
+	color:rgb(175, 136, 44)
 }
 .slide-text-info{
-	margin-top: 2.5%;
+	background-color: #01122240;
+	margin: 0 60px 20px 60px;
+	margin-top: 80px;
+
 }
 .slide-text p{
 	font-size: 0.872em;
+	font-family: 'ManropeLight' ;
 	width: 50%;
 	margin: 0 auto;
-	font-weight: 200;
+	font-weight: 50;
 	line-height: 1.6em;
 	margin-bottom: 1em;
+	padding-bottom: 40px;
 }
 /*----*/
 .btn1{

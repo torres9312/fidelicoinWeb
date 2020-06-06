@@ -1,13 +1,7 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Ideas_agency Bootstarp Website Template | Home :: w3layouts</title>
+<title>Fidelicoins</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -55,23 +49,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<body>
 		<!-----start-container----->
 			<!----- start-header---->
-			<div id="home" class="header">
-				<div class="container">
-					<div class="logo">
-						<a href="#"><img src="images/logo.png" title="logo" /></a>
+			<div id="home" class="header navColor">
+				<div class="container navColor">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="logo navColor">
+								<a href="#"><img src="images/LogoFidely.jpg" title="logo" /></a>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<nav class="top-nav ">
+								<ul class="top-nav">
+									<li class="active"><a href="#home" class="scroll">Home <span> </span></a></li>
+									<li class="page-scroll"><a href="#ser" class="scroll">Services <span> </span></a></li>
+									<li class="page-scroll"><a href="#about" class="scroll">About us <span> </span></a></li>
+									<li class="page-scroll"><a href="#port" class="scroll">Portfolio <span> </span></a></li>
+									<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact us </a></li>
+								</ul>
+								<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+							</nav>
+						</div>
+						<div class="col-md-3 nav-btn text-right">
+							<div class="row">
+								<div class="col-sm-5">
+									<button class="btn btn-primary">Registrarse</button>
+								</div>
+								<div class="col-sm-7">
+									<a href="">Acceso a clientes</a>
+								</div>						
+							</div>
+						</div>
 					</div>
-					<!----start-top-nav---->
-					 <nav class="top-nav">
-						<ul class="top-nav">
-							<li class="active"><a href="#home" class="scroll">Home <span> </span></a></li>
-							<li class="page-scroll"><a href="#ser" class="scroll">Services <span> </span></a></li>
-							<li class="page-scroll"><a href="#about" class="scroll">About us <span> </span></a></li>
-							<li class="page-scroll"><a href="#port" class="scroll">Portfolio <span> </span></a></li>
-							<li class="page-scroll"><a href="#team" class="scroll">Team<span> </span></a></li>
-							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact us </a></li>
-						</ul>
-						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-					</nav>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
@@ -87,7 +95,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			        auto: true,
 			        pager: true,
 			        nav: true,
-			        speed: 500,
+			        speed: 600,
 			        namespace: "callbacks",
 			        before: function () {
 			          $('.events').append("<li>before event fired.</li>");
@@ -104,42 +112,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			    <div  id="top" class="callbacks_container">
 			      <ul class="rslides" id="slider4">
 			        <li>
-			          <img src="images/slide.jpg" alt="">
+			          <img src="images/contact-bg.jpg" alt="">
 			          <div class="caption text-center">
 			          	<div class="slide-text-info">
-			          		<a class="btn1" href="#"><span>Hello world</span></a>
-			          		<h1>We Are A <span>Creative</span> Agency</h1>
+						
+			          		<h1>Gestión de <span>Clientes</span></h1>
 			          		<div class="slide-text">
-			          			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			          			<p>Descripcion del producto</p>
 			          		</div>
-			          		<a class="btn2" href="#"><span>view now</span></a>
+			          		
 			          	</div>
 			          </div>
 			        </li>
 			        <li>
-			          <img src="images/slide.jpg" alt="">
+			          <img src="images/contact-bg.jpg" alt="">
 			          <div class="caption text-center">
 			          	<div class="slide-text-info">
-			          		<a class="btn1" href="#"><span>Hello world</span></a>
-			          		<h1>Lorem <span> dolor </span> consec</h1>
-			          		<div class="slide-text">
-			          			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-			          		</div>
-			          		<a class="btn2" href="#"><span>view now</span></a>
+						
+							<h1>Gestión de <span>Clientes</span></h1>
+							<div class="slide-text">
+								<p>Descripcion del producto</p>
+							</div>
+							
 			          	</div>
 			          </div>
 			        </li>
 			        <li>
-			          <img src="images/slide.jpg" alt="">
+			          <img src="images/contact-bg.jpg" alt="">
 			           <div class="caption text-center">
 			           	<div class="slide-text-info">
-			          		<a class="btn1" href="#"><span>Hello world</span></a>
-			          		<h1>hendre <span>vulputa</span> velit</h1>
-			          		<div class="slide-text">
-			          			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-			          		</div>
-			          		<a class="btn2" href="#"><span>view now</span></a>
-			          	</div>
+						
+							<h1>Gestión de <span>Clientes</span></h1>
+							<div class="slide-text">
+								<p>Descripcion del producto</p>
+							</div>
+						
 			          </div>
 			        </li>
 			      </ul>
@@ -529,8 +536,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
          						<form>
 									<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
 									<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-									<input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
-									<textarea onfocus="if(this.value == 'Message ') this.value='';" onblur="if(this.value == '') this.value='Message *;">Message </textarea>
+									<input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">									
 									<input type="submit" value="Send Message" />
 								</form>	
          			</div>
