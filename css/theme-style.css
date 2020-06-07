@@ -118,31 +118,32 @@ nav a#pull {
 }
 
 .nav-btn button{
-	display: inline-block;
-	top: 29%;
-	right: 0;
-	margin-top: 16px;
-	padding-right: 10px;
-	outline: none;
+
+	margin-top: 18px;
+	border-color: rgb(158, 118, 39);
 	font-family: "ManropeBold";
-	font-size: .8em;
-	box-sizing: border-box;
-	border: none;
-	border-radius: 1em;
-	height: 2.75em;
-	line-height: 2.5em;
-	text-transform: uppercase;
-	padding: 0 1em;
-	box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
-				inset 0 -2px 5px 1px rgba(139,66,8,1),
-				inset 0 -1px 1px 3px rgba(250,227,133,1);
-	background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
-	border: 1px solid #a55d07;
-	color: #011222;
-	cursor: pointer;
-	transition: all .2s ease-in-out;
-	background-size: 100% 100%;
-	background-position:center;
+	font-size: .9em;
+	font-weight: 400;
+	background: rgb(191,149,63);
+	background: linear-gradient(90deg, rgba(191,149,63,1) 0%, rgba(252,246,186,1) 23%, rgba(187,148,63,1) 51%, rgba(251,245,183,1) 75%, rgba(170,119,28,1) 100%);
+	color: #011222!important;
+	text-shadow: aliceblue;
+	border-width: 1px;
+	border-radius: 100px;
+	
+}
+
+.nav-btn button:active{
+	color: #7c620b!important;
+	text-shadow: #011222!important ;
+	text-decoration: none;
+}
+
+
+.nav-btn button:hover{
+	background-color: #011222!important;
+	background: rgb(191,149,63);
+	background: linear-gradient(331deg, rgba(191,149,63,1) 0%, rgba(252,246,186,1) 30%, rgba(187,148,63,1) 52%, rgba(251,245,183,1) 73%, rgba(202,169,90,1) 100%);
 }
 
 .nav-btn a{
@@ -153,6 +154,15 @@ nav a#pull {
 	font-size: 16px;
 	text-decoration: none!important;
 	
+	
+}
+
+@media screen and (min-width: 1200px) {
+	.pl-20{
+		padding-left: 0px;
+	}
+
+
 }
 /*Styles for screen 600px and lower*/
 
@@ -160,6 +170,7 @@ nav a#pull {
 	.centerContainer{
 		text-align: center;
 		margin-bottom: 10px;
+		padding-left: 20px;
 	}
 
 
@@ -192,6 +203,8 @@ nav a#pull {
 	  .centerContainer{
 		  text-align: center;
 		  margin-bottom: 5px;
+		  padding-left: 20px;
+
 	  }
 
 	  
@@ -1278,6 +1291,11 @@ span.default_line {
  }
 } 
 @media (max-width:1200px){
+
+nav {
+	position: relative;
+	float: none;
+}
  .top-nav ul li a {
 	padding: 0.2em 1.2em;
 	font-size: 0.8125em;
