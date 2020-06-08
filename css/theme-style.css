@@ -301,9 +301,6 @@ nav a#pull {
 		margin-top: 0px;
 	}
 
-	html{
-		overflow: hidden;
-	}
 	
 }
 /*Smartphone*/
@@ -341,9 +338,7 @@ nav a#pull {
 		margin-top: 0px;
 	}
 
-	html{
-		overflow: hidden;
-	}
+
 }
 /*----slider----*/
 #slider2,
@@ -436,7 +431,6 @@ nav a#pull {
 }
 .callbacks_nav {
   	position: absolute;
-	-webkit-tap-highlight-color: rgb(249, 253, 4);
 	top: 52%;
 	left: 0;
 	opacity: 0.7;
@@ -446,10 +440,8 @@ nav a#pull {
 	height: 45px;
 	width: 30px;
 	margin-top: -65px;
-	color: yellow;
 	text-decoration: none;
-	font-size: 30px;
-	background-color: black;
+	padding-right: 0px;
 	
 }
 .callbacks_nav:active {
@@ -460,7 +452,7 @@ nav a#pull {
   left: auto;
   background-position: right top;
   right: 0;
-  padding-left: 0px;
+  padding-right: 0px;
   text-decoration: none;
 }
 #slider3-pager a {
@@ -1381,7 +1373,7 @@ nav {
  }
  .about-grid-left span {
 	background-size:90%;
-	width: 480px;
+	width: 100%;
 	height: 315px;
  }
  .callbacks_tabs {
@@ -1523,7 +1515,7 @@ nav {
  }
  .about-grid-left span {
 	background-size: 80%;
-	width: 400px;
+	width: 100%;
 	height: 250px;
  }
  .about-head p, .portfolio-head p, .team-head p, .contact-head p{
@@ -1569,7 +1561,7 @@ nav {
  }
  .about-grid-left span {
 	background-size: 80%;
-	width: 259px;
+	width: 100%;
 	height: 160px;
  }
  .team-member-grid p {
