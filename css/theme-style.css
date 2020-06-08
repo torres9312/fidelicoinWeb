@@ -19,6 +19,9 @@
 
 }
 
+.pr-20{
+	padding-right: 0px;
+}
 
 html, body{
     font-family: "Manrope";
@@ -71,6 +74,7 @@ body a{
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
 	color:rgb(175, 136, 44);
+	text-decoration: none;
 }
 .logo a{
 	display:block;
@@ -104,10 +108,12 @@ nav a {
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
+	text-decoration: none;
 }
 nav a:hover{
 	text-decoration:none;
 	color:rgb(14, 0, 0);
+	
 }
 nav a#pull {
 	display: none;
@@ -134,9 +140,9 @@ nav a#pull {
 }
 
 .nav-btn button:active{
-	color: #7c620b!important;
-	text-shadow: #011222!important ;
-	text-decoration: none;
+	color: #53420b!important;
+	text-shadow: #011222!important;
+	
 }
 
 
@@ -162,6 +168,7 @@ nav a#pull {
 		padding-left: 0px;
 	}
 
+	
 
 }
 /*Styles for screen 600px and lower*/
@@ -171,9 +178,11 @@ nav a#pull {
 		text-align: center;
 		margin-bottom: 10px;
 		padding-left: 20px;
+
 	}
 
 
+	
 }
 
 @media screen and (max-width: 768px) {
@@ -206,6 +215,10 @@ nav a#pull {
 		  padding-left: 20px;
 
 	  }
+
+	  
+
+
 
 	  
 }
@@ -245,7 +258,7 @@ nav a#pull {
 		top: 10px;
 	}
 	nav a#pull img{
-		margin-right:2%;
+		margin-right:4%;
 	}
 	.top-nav ul li a {
 		color: rgb(248, 248, 248);
@@ -261,6 +274,14 @@ nav a#pull {
 		width: 50%;
 		display: inline-flex;
 	}
+
+	.pl-20{
+		padding-left: 10px;
+	}
+	.nav-btn button{
+		margin-top: 0px;
+	}
+	
 }
 
 @media only screen and (max-width : 568px) {
@@ -272,7 +293,18 @@ nav a#pull {
 	#btnAccess{
 		padding-left: 10px;
 	}
+	.pl-20{
+		padding-left: 10px;
+	}
 
+	.nav-btn button{
+		margin-top: 0px;
+	}
+
+	html{
+		overflow: hidden;
+	}
+	
 }
 /*Smartphone*/
 @media only screen and (max-width : 320px) {
@@ -299,6 +331,18 @@ nav a#pull {
 	.centerContainer a{
 		padding-left: 20px;
 		margin-bottom: 5px;
+	}
+
+	.pl-20{
+		padding-left: 10px;
+	}
+
+	.nav-btn button{
+		margin-top: 0px;
+	}
+
+	html{
+		overflow: hidden;
 	}
 }
 /*----slider----*/
@@ -366,17 +410,18 @@ nav a#pull {
   width: 100%;
   left: 0;
   top: 0;
+  text-decoration: none;
 }
 .callbacks img {
   position: relative;
-  z-index: 1;
+  z-index: 6;
   height: auto;
   border: 0;
 }
 .callbacks .caption {
 	display: block;
 	position: absolute;
-	z-index: 2;
+	z-index: 6;
 	font-size: 20px;
 	text-shadow: none;
 	color: #fff;
@@ -387,33 +432,47 @@ nav a#pull {
 	max-width: none;
 	top: 10%;
 	text-align: center;
+	text-decoration: none;
 }
 .callbacks_nav {
   	position: absolute;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: rgb(249, 253, 4);
 	top: 52%;
 	left: 0;
 	opacity: 0.7;
-	z-index: 3;
-	text-indent: -9999px;
+	z-index: 6;
 	overflow: hidden;
 	text-decoration: none;
-	height: 61px;
-	width: 55px;
-	background: transparent url("../images/themes.png") no-repeat left top;
+	height: 45px;
+	width: 30px;
 	margin-top: -65px;
+	color: yellow;
+	text-decoration: none;
+	font-size: 30px;
+	background-color: black;
+	
 }
 .callbacks_nav:active {
   opacity: 1.0;
+  text-decoration: none;
 }
 .callbacks_nav.next {
   left: auto;
   background-position: right top;
   right: 0;
+  padding-left: 0px;
+  text-decoration: none;
 }
 #slider3-pager a {
   display: inline-block;
+  text-decoration: none;
 }
+
+.prevArrow{
+	text-decoration: none;
+}
+
+
 #slider3-pager span{
   float: left;
 }
@@ -429,9 +488,11 @@ nav a#pull {
   background: #FFF;
   border-radius:30em;
   opacity:1;
+  text-decoration: none;
 }
 #slider3-pager a {
   padding: 0;
+  text-decoration: none;
 }
 #slider3-pager li{
 	display:inline-block;
@@ -485,6 +546,7 @@ nav a#pull {
 /*----*/
 .callbacks_tabs a{
  visibility: hidden;
+ text-decoration: none;
 }
 .callbacks_tabs a:after {
   content: "\f111";
@@ -565,14 +627,19 @@ nav a#pull {
 /*-----start-services----*/
 .services{
 	padding: 3em 0;
-	background: url(../images/services-bg.jpg);
+	background-color: #011222;
 }
 .services-grid{
 	margin-top:2em;
 }
 .services-head h3{
 	text-transform: uppercase;
-	color: #F4BB36;
+	color: #D5AD6D; /*if no support for background-clip*/
+	background: -webkit-linear-gradient(transparent, transparent),
+	-webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	font-weight: 700;
 	font-size: 1.6em;
 	margin: 0 0 0.5em 0;
@@ -581,7 +648,7 @@ nav a#pull {
 	margin-top:0.5em;
 }
 .services-head p{
-	color: #414141;
+	color: #ffffff;
 	font-size: 0.875em;
 	width: 80%;
 	margin: 0 auto;
@@ -595,15 +662,15 @@ nav a#pull {
 	margin-top: 0.2em;
 }
 .services-grid-right h4 a{
-	color: #222;
+	color: rgb(175, 136, 44);
 	font-size: 1.4em;
 }
 .services-grid-right h4 a:hover{
 	text-decoration:none;
-	color:#F4BB36;
+	color:rgb(175, 136, 44);
 }
 .services-grid-right p{
-	color: #414141;
+	color: #fcfcfc;
 	font-size: 0.875em;
 	line-height: 1.8em;
 }
@@ -1353,6 +1420,7 @@ nav {
 	}
  .slide-text-info h1 {
 	font-size: 2em;
+	
  }
  .slide-text p {
 	font-size: 0.8125em;
@@ -1406,6 +1474,7 @@ nav {
  }
  .slide-text-info {
 	margin-top: 0;
+	margin-top: 30px;
  }
  .rslides img {
 	min-height:320px;
@@ -1431,6 +1500,7 @@ nav {
  .slide-text-info h1 {
 	font-size: 1.1em;
 	margin:0;
+	margin-top: 30px;
  }
  .btn2 span {
 	width: 140px;
