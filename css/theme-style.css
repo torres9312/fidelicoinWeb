@@ -24,6 +24,13 @@
 	margin: 0;
   }
 
+
+
+.modal-view{
+	background-color: black;
+}
+
+
   .fixed{
 	position:fixed;
 	z-index: 100;
@@ -72,6 +79,13 @@
 	-moz-box-shadow: 8px 8px 8px -1px rgba(0,0,0,0.33);
 	box-shadow: 8px 8px 8px -1px rgba(0,0,0,0.33);
 	height: 510px;
+}
+
+.list-services a{
+	text-decoration: none;
+	font-family: "ManropeBold";
+	color: #fff;
+	cursor: pointer;
 }
 
 .title-secondary-m2{
@@ -239,6 +253,7 @@ body a{
 .logo{
 	float:left;
 	max-width: 50px;
+	padding-left: 10px;
 }
 .logo a{
 	color: #FFF;
@@ -251,7 +266,22 @@ body a{
 .logo320{
 	display:none;
 }
+
+
 /*----navbar-nav----*/
+
+@media (min-width: 992px){
+.nav-logo {
+    width: 20%;
+}
+
+.nav-btn {
+    width: 21.5%;
+}
+
+}
+
+
 
 .pr-20{
 	padding-right: 0px;
@@ -265,7 +295,10 @@ body a{
 	position: absolute;
 	min-width:100%;
 	background-color: #011222;
+}
 
+.nav-index li ul li{
+	padding-left: 0px;
 }
 
 .nav-index li ul li a{
@@ -360,34 +393,62 @@ nav a#pull {
 	background-color: #011222!important;
 }
 
-.nav-btn button{
-
+.btn-first{
+	height: 36px;
 	margin-top: 18px;
-	border-color: rgb(158, 118, 39);
 	font-family: "ManropeBold";
 	font-size: .9em;
 	font-weight: 400;
+	border-color: #011222!important;
 	background: rgb(191,149,63);
 	background: linear-gradient(90deg, rgba(191,149,63,1) 0%, rgba(252,246,186,1) 23%, rgba(187,148,63,1) 51%, rgba(251,245,183,1) 75%, rgba(170,119,28,1) 100%);
 	color: #011222!important;
 	text-shadow: aliceblue;
 	border-width: 1px;
 	border-radius: 100px;
+
 	
 }
 
-.nav-btn button:active{
-	color: #53420b!important;
-	text-shadow: #011222!important;
-	
-}
-
-
-.nav-btn button:hover{
+.btn-second{
+	margin-top: 18px;
 	background-color: #011222!important;
-	background: rgb(191,149,63);
-	background: linear-gradient(331deg, rgba(191,149,63,1) 0%, rgba(252,246,186,1) 30%, rgba(187,148,63,1) 52%, rgba(251,245,183,1) 73%, rgba(202,169,90,1) 100%);
+	border-radius: 100px;
+	border-color: #fff;
+	border-width: 1px;
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 35px;
+	font-size: .9em;
+	font-weight: 400;
+	font-family: "ManropeBold";
+
 }
+
+
+
+.btn-second:hover{
+	background-color: #ffffff!important;
+	color: #011222!important;
+	border-color: #011222!important;
+
+}
+
+.btn-first:active{
+
+	background: linear-gradient(120deg, rgba(191,149,63,1) 0%, rgba(252,246,186,1) 23%, rgba(187,148,63,1) 51%, rgba(251,245,183,1) 75%, rgba(170,119,28,1) 100%);
+
+}
+
+
+.btn-first:hover{
+	border-color: rgb(158, 118, 39);
+	background: rgb(191,149,63);
+	background: linear-gradient(150deg, rgba(191,149,63,1) 0%, rgba(252,246,186,1) 23%, rgba(187,148,63,1) 51%, rgba(251,245,183,1) 75%, rgba(170,119,28,1) 100%);
+	color: #011222!important;
+	text-shadow: aliceblue;
+}
+
 
 .nav-btn a{
 	color: rgb(175, 136, 44);
@@ -400,9 +461,6 @@ nav a#pull {
 	
 }
 
-.nav-btn {
-	background-color: #011222!important ;
-}
 
 @media screen and (min-width: 1200px) {
 	.container {
@@ -1565,7 +1623,7 @@ span.default_line {
 	height: 40px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/to-top1.png") no-repeat 0px 0px;
+	background: url("../images/arrowtop.png") no-repeat 0px 0px;
 	border-radius: 30em;
 }
 #toTopHover {
@@ -1841,3 +1899,78 @@ nav {
  }
 }
 
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 0px 0px 20px 0px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.modalDialog img{
+	width: 100%;
+	height: 100%;
+}
+
+.header-modal{
+	height: 150px;
+}
+
+.body-modal{
+	padding: 0px 20px 0px 20px;
+}
+
+.modalDialog a{
+	text-decoration: none;
+}
+
+.modalDialog h4{
+	font-family: "ManropeBold" ;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.modalDialog p{
+	font-family: "Manrope" ;
+	font-size: 16px;
+}
+.close-modal {
+	background-color: #011222!important;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	border-radius: 100px;
+
+}
+
+.close-modal:hover { background: #000000; }
+
+
+/* Card design*/

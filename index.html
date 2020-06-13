@@ -8,9 +8,11 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript" src="css/fontawesome/js/all.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -46,7 +48,14 @@
 	        		}
 	    		});
 			});
+
+				window.onclick = function(event) {
+				if (event.target == Modal1) {
+					window.location.href = "#plane";
+				}
+				}
 		</script>
+
 		<!----//End-top-nav-script---->
 </head>
 	<body>
@@ -55,20 +64,20 @@
 			<div id="home" class="header navColor fixed">
 
 				<div class="row">
-					<div class="col-md-2" id="logo">
+					<div class="col-md-2 nav-logo" id="logo">
 						<div class="logo navColor">
 							<a href="#"><img src="images/LogoFidely.jpg" title="logo" /></a>
 						</div>
 					</div>
-					<div class="col-md-7 pr-20">
+					<div class="col-md-7 pr-20 nav-menu">
 						<nav class="top-nav ">
 							<ul class="top-nav nav-index">
 								<li class="page-scroll"><a href="#top" class="scroll">Inicio <span> </span></a></li>
 								<li class="page-scroll dropdown"><a href="#ser" class="scroll">Fidelicoins <span> </span></a>
 									<ul>
-										<li><a href="">¿Qué es Fidelicoins?</a></li>
-										<li><a href="">¿Porque usar Fidelicoins?</a></li>
-										<li><a href="">¿Donde usar Fidelicoins?</a></li>
+										<li><a href="#">¿Qué es Fidelicoins?</a></li>
+										<li><a href="#">¿Por qué usar Fidelicoins?</a></li>
+										<li><a href="#">¿Donde usar Fidelicoins?</a></li>
 									</ul>
 								
 								</li>
@@ -80,14 +89,14 @@
 							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
 						</nav>
 					</div>
-					<div class="col-md-3 nav-btn " style="
+					<div class="col-md-3 nav-btn" style="
 					text-align: right;">
 						<div class="row alignRow">
 							<div class="col-sm-6">
-								<button class="btn btn-primary">Registrarse</button>
+								<button class="btn btn-primary btn-second">Entrar</button>
 							</div>
 							<div class="col-sm-6 " style="text-align: left; padding-left: 0px;" >
-								<button class="btn btn-primary" style="padding-left: 30px; padding-right: 30px;">Entrar</button>
+								<button class="btn btn-primary btn-first" style="padding-left: 20px; padding-right: 20px;">Registrar</button>
 							</div>						
 						</div>
 					</div>
@@ -494,7 +503,7 @@
          			<h3 style="color: #011222;">Paquetes empresariales</h3>
          			<p>Esta es la lista de nuestros paquetes empresariales para fidelización de clientes.</p>
 				 </div>
-
+				 
 				 <div class="container">
 				 <div class="row listPlane">
 					<div class="col-md-3 content-plan">
@@ -505,23 +514,54 @@
 								
 
 								<ul>
-									<li>Identificacion de clientes por código de barras y QR</li>
-									<li>Disponible app Móvil para clientes</li>
-									<li>Disponible app móvil para personal</li>
-									<li>Mensajes masivos a los clientes por whatsapp</li>
-									<li>Gestion de cortesias</li>
-									<li>Marketing de ofertas promocionales</li>
-									<li>Identificacion de clientes con huella digital</li>
-									<li>fidelizacion en coalición</li>
-									<li>Concursos por productos de recompensa</li>
-									<li>Gamificación</li>
-									<li>Gestion de tarjetas de regalo</li>
+									<li><a href="#Modal1">Identificador de clientes por código de barras y QR</a> </li>
+									<li><a>Disponible app Móvil para clientes</a></li>
+									<li><a>Disponible app móvil para personal</a></li>
+									<li><a>Mensajes masivos a los clientes por whatsapp</a></li>
+									<li><a>Gestion de cortesias</a></li>
+									<li><a>Marketing de ofertas promocionales</a></li>
+									<li><a>Identificacion de clientes con huella digital</a></li>
+									<li><a>Fidelizacion en coalición</a></li>
+									<li><a>Concursos por productos de recompensa</a></li>
+									<li><a>Gamificación</a></li>
+									<li><a>Gestion de tarjetas de regalo</a></li>
 								</ul>
 
 
 							</div>
 						
 						</div>
+
+						<!-- MODALS -->
+						
+						<div id="Modal1" class="modalDialog">
+							<div>
+								<a href="#plane" title="Close" class="close-modal">X</a>
+								<div>
+									<div class="row">
+										<div class="row-md-6">
+											<div class="header-modal">
+												<img src="/images/modal-picture.svg" alt="">
+											</div>
+											
+										</div>
+										<div class="row-md-6">
+											<div class="body-modal">
+											<h4> <strong>Identificador de clientes por código de barras o QR</strong> </h4>
+											<p>Agrega a tu plan esta función para que tus clientes puedan ser identificados por códigos de barras o QR</p>	
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+
+						<!-- END MODALS -->
+
+						
 					<div class="col-md-1 content-plan">
 					  <div class="list-services-secondary hover-list">
 						<div class="title-secondary"><h4 style="margin-top: 0px;">Gratis</h4></div>
@@ -637,7 +677,8 @@
 				 
          	</div>
          </div>
-         <!----//End-team----->
+		 <!----//End-team----->
+
          <!----start-contact---->
          <div id="contact" class="contact">
          	<div class="container">
