@@ -52,39 +52,47 @@
 	<body>
 		<!-----start-container----->
 			<!----- start-header---->
-			<div id="home" class="header navColor">
-				<div class="container navColor">
-					<div class="row">
-						<div class="col-md-2 pl-20" id="logo">
-							<div class="logo navColor">
-								<a href="#"><img src="images/LogoFidely.jpg" title="logo" /></a>
-							</div>
-						</div>
-						<div class="col-md-7 pr-20">
-							<nav class="top-nav ">
-								<ul class="top-nav">
-									<li class="page-scroll"><a href="#home" class="scroll">Home <span> </span></a></li>
-									<li class="page-scroll"><a href="#ser" class="scroll">Servicios <span> </span></a></li>
-									<li class="page-scroll"><a href="#about" class="scroll">Quienes somos <span> </span></a></li>
-									<li class="page-scroll"><a href="#plane" class="scroll">Planes <span> </span></a></li>
-									<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contacto </a></li>
-								</ul>
-								<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-							</nav>
-						</div>
-						<div class="col-md-3 nav-btn centerContainer">
-							<div class="row alignRow">
-								<div class="col-sm-6 centerContainer">
-									<button class="btn btn-primary">Registrarse</button>
-								</div>
-								<div class="col-sm-6 centerContainer pl-20"  >
-									<button class="btn btn-primary" style="padding-left: 30px; padding-right: 30px;">Entrar</button>
-								</div>						
-							</div>
+			<div id="home" class="header navColor fixed">
+
+				<div class="row">
+					<div class="col-md-2" id="logo">
+						<div class="logo navColor">
+							<a href="#"><img src="images/LogoFidely.jpg" title="logo" /></a>
 						</div>
 					</div>
-					<div class="clearfix"> </div>
+					<div class="col-md-7 pr-20">
+						<nav class="top-nav ">
+							<ul class="top-nav nav-index">
+								<li class="page-scroll"><a href="#top" class="scroll">Inicio <span> </span></a></li>
+								<li class="page-scroll dropdown"><a href="#ser" class="scroll">Fidelicoins <span> </span></a>
+									<ul>
+										<li><a href="">¿Qué es Fidelicoins?</a></li>
+										<li><a href="">¿Porque usar Fidelicoins?</a></li>
+										<li><a href="">¿Donde usar Fidelicoins?</a></li>
+									</ul>
+								
+								</li>
+								<li class="page-scroll"><a href="#about" class="scroll">Casos de exito<span> </span></a></li>
+								<li class="page-scroll"><a href="#plane" class="scroll">Caracteristicas<span> </span></a></li>
+								<li class="page-scroll"><a href="#plane" class="scroll">Planes<span> </span></a></li>
+								<li class="page-scroll"><a href="#plane" class="scroll">Blog</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+					</div>
+					<div class="col-md-3 nav-btn " style="
+					text-align: right;">
+						<div class="row alignRow">
+							<div class="col-sm-6">
+								<button class="btn btn-primary">Registrarse</button>
+							</div>
+							<div class="col-sm-6 " style="text-align: left; padding-left: 0px;" >
+								<button class="btn btn-primary" style="padding-left: 30px; padding-right: 30px;">Entrar</button>
+							</div>						
+						</div>
+					</div>
 				</div>
+				<div class="clearfix"> </div>
 			</div>
 			<!----- //End-header---->
 			<!----- start-slider---->
@@ -112,7 +120,7 @@
 			  </script>
 			<!----//End-slider-script---->
 			<!-- Slideshow 4 -->
-			    <div  id="top" class="callbacks_container">
+			    <div  id="top" class="callbacks_container slider-content">
 			      <ul class="rslides" id="slider4">
 			        <li>
 			          <img src="images/contact-bg.jpg" alt="">
@@ -490,145 +498,140 @@
 				 <div class="container">
 				 <div class="row listPlane">
 					<div class="col-md-3 content-plan">
-					<div class="title-list" style="padding-top: 0px;"><h4 style="margin-top: 0px;" >Planes y servicios</h4></div>
-					  
-					  <div class="division"></div>
-					  <div class="list-services">
-						  
-
-						<ul>
-							<li>Identificacion de clientes por código de barras y QR</li>
-							<li>Disponible app Móvil para clientes</li>
-							<li>Disponible app móvil para personal</li>
-							<li>Mensajes masivos a los clientes por whatsapp</li>
-							<li>Gestion de cortesias</li>
-							<li>Marketing de ofertas promocionales</li>
-							<li>Identificacion de clientes con huella digital</li>
-							<li>fidelizacion en coalición</li>
-							<li>Concursos por productos de recompensa</li>
-							<li>Gamificación</li>
-							<li>Gestion de tarjetas de regalo</li>
-						</ul>
-
-
-					  </div>
-					  
-					</div>
-					<div class="col-md-1 content-plan">
-						<div class="title-list-secondary" id="title-plan" style="padding-top: 0px;"><h4 style="margin-top: 0px;">Gratis</h4></div>
-						<div class="division-secondary-free"></div>
-					  <div class="list-services-secondary">
+						<div class="title-list" style="padding-top: 0px;"><h4 style="margin-top: 0px;" >Planes y servicios</h4></div>
 						
-						<ul>
+						<div class="division"></div>
+							<div class="list-services">
+								
+
+								<ul>
+									<li>Identificacion de clientes por código de barras y QR</li>
+									<li>Disponible app Móvil para clientes</li>
+									<li>Disponible app móvil para personal</li>
+									<li>Mensajes masivos a los clientes por whatsapp</li>
+									<li>Gestion de cortesias</li>
+									<li>Marketing de ofertas promocionales</li>
+									<li>Identificacion de clientes con huella digital</li>
+									<li>fidelizacion en coalición</li>
+									<li>Concursos por productos de recompensa</li>
+									<li>Gamificación</li>
+									<li>Gestion de tarjetas de regalo</li>
+								</ul>
+
+
+							</div>
+						
+						</div>
+					<div class="col-md-1 content-plan">
+					  <div class="list-services-secondary hover-list">
+						<div class="title-secondary"><h4 style="margin-top: 0px;">Gratis</h4></div>
+						<div class="list-items">
+							<ul>
 							
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-						</ul>
-
-
+								<li><i class="fas fa-check"></i></li>
+								<li><i class="fas fa-check"></i></li>
+								<li><i class="fas fa-check"></i></li>
+								<li><i class="fas fa-check"></i></li>
+								<li><i class="fas fa-ban"></i></li>
+								<li><i class="fas fa-ban"></i></li>
+								<li><i class="fas fa-ban"></i></li>
+								<li><i class="fas fa-ban"></i></li>
+								<li><i class="fas fa-ban"></i></li>
+								<li><i class="fas fa-ban"></i></li>
+								<li><i class="fas fa-ban"></i></li>
+							</ul>
+						</div>
 					  </div>
 					</div>
-					<div class="col-md-2 content-plan">
-						<div class="title-list-secondary"><div class="col"><div><img class="image-title" src="images/oro.png" alt=""></div><div><label for="">$1,000</label></div></div></div>
-					  
-					  <div class="division-secondary"></div>
-					  <div class="list-services-secondary">
 
-						<ul>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-						</ul>
-
-
+					<div class="col-md-2 content-plan hover-list">
+						<div class="list-services-secondary hover-list">
+						  <div class="title-secondary-m2"><img class="img-list-title" src="/images/oro.png" alt=""><h4 style="margin-top: 0px;">Bronce</h4></div>
+						  <div class="list-items">
+							  <ul>
+							  
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+							  </ul>
+						  </div>
+						</div>
 					  </div>
-					</div>
-					<div class="col-md-2 content-plan">
-						<div class="title-list-secondary"><div class="col"><div><img class="image-title" src="images/plata.png" alt=""></div><div><label for="">$1,100</label></div></div></div>
-					  
-					  <div class="division-secondary"></div>
-					  <div class="list-services-secondary">
 
-						<ul>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-						</ul>
-
-
+					  <div class="col-md-2 content-plan hover-list">
+						<div class="list-services-secondary hover-list ">
+						  <div class="title-secondary-m2"><img class="img-list-title" src="/images/plata.png" alt=""><h4 style="margin-top: 0px;">Plata</h4></div>
+						  <div class="list-items">
+							  <ul>
+							  
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+							  </ul>
+						  </div>
+						</div>
 					  </div>
-					</div>
-					<div class="col-md-2 content-plan">
-						<div class="title-list-secondary"><div class="col"><div><img class="image-title" src="images/oro2.png" alt=""></div><div><label for="">$1,500</label></div></div></div>
-					  
-					  <div class="division-secondary"></div>
-					  <div class="list-services-secondary">
 
-						<ul>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-							<li><i class="fas fa-ban"></i></li>
-						</ul>
-
-
+					  <div class="col-md-2 content-plan hover-list">
+						<div class="list-services-secondary hover-list">
+						  <div class="title-secondary-m2"><img class="img-list-title" src="/images/oro2.png" alt=""><h4 style="margin-top: 0px;">Oro</h4></div>
+						  <div class="list-items">
+							  <ul>
+							  
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+							  </ul>
+						  </div>
+						</div>
 					  </div>
-					</div>
-					<div class="col-md-2 content-plan">
-						<div class="title-list-secondary"><div class="col"><div><img class="image-title" src="images/plata.png" alt=""></div><div><label for="">$2,000</label></div></div></div>
-					  
-					  <div class="division-secondary"></div>
-					  <div class="list-services-secondary">
 
-						<ul>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-							<li><i class="fas fa-check"></i></li>
-						</ul>
-
-
+					  <div class="col-md-2 content-plan hover-list">
+						<div class="list-services-secondary hover-list">
+						  <div class="title-secondary-m2"><img class="img-list-title" src="/images/oro.png" alt=""><h4 style="margin-top: 0px;">Platino</h4></div>
+						  <div class="list-items">
+							  <ul>
+							  
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-check"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+								  <li><i class="fas fa-ban"></i></li>
+							  </ul>
+						  </div>
+						</div>
 					  </div>
-					</div>
+					
 				  </div>
 				 </div>
 				 
