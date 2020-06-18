@@ -33,7 +33,7 @@
 
   .fixed{
 	position:fixed;
-	z-index: 100;
+	z-index: 5;
 	width: 100%;
   }
 
@@ -135,8 +135,14 @@
 .img-list-title{
 	width: 50px;
 	height: 50px;
+	margin-bottom: 5px;
 }
 
+
+.logo-img{
+	width: 240px;
+	height: 100%;
+}
 
 
 .list-services-secondary{
@@ -251,7 +257,7 @@ body a{
 }
 
 .logo{
-	float:left;
+
 	max-width: 50px;
 	padding-left: 10px;
 }
@@ -720,7 +726,7 @@ nav a#pull {
 .callbacks .caption {
 	display: block;
 	position: absolute;
-	z-index: 6;
+	z-index: 4;
 	font-size: 20px;
 	text-shadow: none;
 	color: #fff;
@@ -738,7 +744,7 @@ nav a#pull {
 	top: 52%;
 	left: 0;
 	opacity: 0.7;
-	z-index: 6;
+	z-index: 4;
 	overflow: hidden;
 	text-decoration: none;
 	height: 45px;
@@ -823,7 +829,7 @@ nav a#pull {
 	list-style: none;
 	position: absolute;
 	top: 88%;
-	z-index: 999;
+	z-index: 4;
 	left: 47%;
 	padding: 0;
 	margin: 0;
@@ -867,7 +873,8 @@ nav a#pull {
 	padding-top: 20px;
 	font-size: 3.2em;
 	font-family: 'ManropeLight';
-	font-weight: 700;
+	font-weight: 300;
+	
 }
 .slide-text-info h1 span{
 	color:rgb(175, 136, 44)
@@ -1144,7 +1151,7 @@ nav a#pull {
 		.portfolio .label-text {
 			color:#fff;
 			position: relative;
-			z-index:500;
+			z-index:4;
 			padding:5px 8px;
 		}
 			
@@ -1913,6 +1920,7 @@ nav {
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
+	padding-top: 5px;
 }
 
 
@@ -1933,6 +1941,7 @@ nav {
 .modalDialog img{
 	width: 100%;
 	height: 100%;
+	padding-top: 20px;
 }
 
 .header-modal{

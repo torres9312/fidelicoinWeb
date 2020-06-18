@@ -50,7 +50,7 @@
 			});
 
 				window.onclick = function(event) {
-				if (event.target == Modal1) {
+				if (event.target == Modal1 || event.target == Modal2 || event.target == Modal3 ) {
 					window.location.href = "#plane";
 				}
 				}
@@ -65,8 +65,8 @@
 
 				<div class="row">
 					<div class="col-md-2 nav-logo" id="logo">
-						<div class="logo navColor">
-							<a href="#"><img src="images/LogoFidely.jpg" title="logo" /></a>
+						<div >
+							<a href="#"><img class="logo-img" src="images/logo-FC.svg" title="logo" /></a>
 						</div>
 					</div>
 					<div class="col-md-7 pr-20 nav-menu">
@@ -132,11 +132,11 @@
 			    <div  id="top" class="callbacks_container slider-content">
 			      <ul class="rslides" id="slider4">
 			        <li>
-			          <img src="images/contact-bg.jpg" alt="">
+			          <img src="images/slider-img1.png" alt="">
 			          <div class="caption text-center">
 			          	<div class="slide-text-info">
 						
-			          		<h1>Gestión de <span>clientes</span></h1>
+			          		<h1>Gestión de clientes</h1>
 			          		<div class="slide-text">
 			          			<p>Descripcion del producto</p>
 			          		</div>
@@ -145,11 +145,11 @@
 			          </div>
 			        </li>
 			        <li>
-			          <img src="images/image2.png" alt="">
+			          <img src="images/slider-img1.png" alt="">
 			          <div class="caption text-center">
 			          	<div class="slide-text-info">
 						
-							<h1>Gestión de <span>clientes</span></h1>
+							<h1>Gestión de clientes</h1>
 							<div class="slide-text">
 								<p>Descripcion del producto</p>
 							</div>
@@ -158,11 +158,11 @@
 			          </div>
 			        </li>
 			        <li>
-			          <img src="images/image3.jpg" alt="">
+			          <img src="images/slider-img1.png" alt="">
 			           <div class="caption text-center">
 			           	<div class="slide-text-info">
 						
-							<h1>Gestión de <span>clientes</span></h1>
+							<h1>Gestión de clientes</h1>
 							<div class="slide-text">
 								<p>Descripcion del producto</p>
 							</div>
@@ -515,8 +515,8 @@
 
 								<ul>
 									<li><a href="#Modal1">Identificador de clientes por código de barras y QR</a> </li>
-									<li><a>Disponible app Móvil para clientes</a></li>
-									<li><a>Disponible app móvil para personal</a></li>
+									<li><a href="#Modal2">Disponible app Móvil para clientes</a></li>
+									<li><a href="#Modal3">Disponible app móvil para personal</a></li>
 									<li><a>Mensajes masivos a los clientes por whatsapp</a></li>
 									<li><a>Gestion de cortesias</a></li>
 									<li><a>Marketing de ofertas promocionales</a></li>
@@ -541,14 +541,62 @@
 									<div class="row">
 										<div class="row-md-6">
 											<div class="header-modal">
-												<img src="/images/modal-picture.svg" alt="">
+												<img src="images/modal-picture.svg" alt="">
 											</div>
 											
 										</div>
 										<div class="row-md-6">
 											<div class="body-modal">
 											<h4> <strong>Identificador de clientes por código de barras o QR</strong> </h4>
-											<p>Agrega a tu plan esta función para que tus clientes puedan ser identificados por códigos de barras o QR</p>	
+											<p>Agrega a tu plan esta función para que tus clientes puedan ser identificados por códigos de barras o QR.</p>	
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+						<div id="Modal2" class="modalDialog">
+							<div>
+								<a href="#plane" title="Close" class="close-modal">X</a>
+								<div>
+									<div class="row">
+										<div class="row-md-6">
+											<div class="header-modal">
+												<img src="images/modal2.svg" alt="">
+											</div>
+											
+										</div>
+										<div class="row-md-6">
+											<div class="body-modal">
+											<h4> <strong>Disponible app Móvil para clientes</strong> </h4>
+											<p>Incluye en tu plan esta función para que tus clientes esten al tanto de su cuenta y las promociones por medio de la App Oficial de Fidelicoins.</p>	
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+						<div id="Modal3" class="modalDialog">
+							<div>
+								<a href="#plane" title="Close" class="close-modal">X</a>
+								<div>
+									<div class="row">
+										<div class="row-md-6">
+											<div class="header-modal">
+												<img src="images/modal3.svg" alt="">
+											</div>
+											
+										</div>
+										<div class="row-md-6">
+											<div class="body-modal">
+											<h4> <strong>Disponible app móvil para personal</strong> </h4>
+											<p>Incluye en tu plan esta función para que tus empleados puedan administrar las configuraciones por medio de la App Oficial de Fidelicoins.</p>	
 											</div>
 											
 										</div>
@@ -586,7 +634,7 @@
 
 					<div class="col-md-2 content-plan hover-list">
 						<div class="list-services-secondary hover-list">
-						  <div class="title-secondary-m2"><img class="img-list-title" src="/images/oro.png" alt=""><h4 style="margin-top: 0px;">Bronce</h4></div>
+						  <div class="title-secondary-m2"><img class="img-list-title" src="images/icon-bronce.svg" alt=""><h4 style="margin-top: 0px;">$ 1,000</h4></div>
 						  <div class="list-items">
 							  <ul>
 							  
@@ -608,7 +656,7 @@
 
 					  <div class="col-md-2 content-plan hover-list">
 						<div class="list-services-secondary hover-list ">
-						  <div class="title-secondary-m2"><img class="img-list-title" src="/images/plata.png" alt=""><h4 style="margin-top: 0px;">Plata</h4></div>
+						  <div class="title-secondary-m2"><img class="img-list-title" src="images/icon-plata.svg" alt=""><h4 style="margin-top: 0px;">$ 1,100</h4></div>
 						  <div class="list-items">
 							  <ul>
 							  
@@ -630,7 +678,7 @@
 
 					  <div class="col-md-2 content-plan hover-list">
 						<div class="list-services-secondary hover-list">
-						  <div class="title-secondary-m2"><img class="img-list-title" src="/images/oro2.png" alt=""><h4 style="margin-top: 0px;">Oro</h4></div>
+						  <div class="title-secondary-m2"><img class="img-list-title" src="images/icon-gold.svg" alt=""><h4 style="margin-top: 0px;">$ 1,500</h4></div>
 						  <div class="list-items">
 							  <ul>
 							  
@@ -652,7 +700,7 @@
 
 					  <div class="col-md-2 content-plan hover-list">
 						<div class="list-services-secondary hover-list">
-						  <div class="title-secondary-m2"><img class="img-list-title" src="/images/oro.png" alt=""><h4 style="margin-top: 0px;">Platino</h4></div>
+						  <div class="title-secondary-m2"><img class="img-list-title" src="images/icon-platino.svg" alt=""><h4 style="margin-top: 0px;">$ 2,000</h4></div>
 						  <div class="list-items">
 							  <ul>
 							  
