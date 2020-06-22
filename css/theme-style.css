@@ -19,6 +19,77 @@
 
 }
 
+:root{
+	--primary-color:#011222!important;
+}
+
+/*ROTACION 360*/
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(-360deg);}}
+
+/*ROTACION MONEDA*/
+  @-webkit-keyframes giro {
+	from { -webkit-transform: rotateY(0deg);    }
+	to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+
+
+
+.show-loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+	background: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.show-loading img{
+	-webkit-animation-name: giro;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-duration: 1s;
+   -webkit-transform-style: preserve-3d;
+
+    /* ROTACION 360
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+   */
+}
+
+.show-loading .imgsize{
+	width: 90px;
+	height: 90px;
+}
+
+
+
+
+#contenedor-imagen img {
+	border: 5px solid #eee;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+   }
+
+#contenedor-imagen img:hover {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+   }
+
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -993,6 +1064,44 @@ nav a#pull {
 	background-position: -314px 1px;
 }
 /*-----//End-services----*/
+
+/*-----start-socios----*/
+
+.socios{
+	background-color: #fff ;
+	height: 600px;
+	width: 100%;
+}
+
+.panel-socios{
+	padding-top: 30px;
+}
+
+.box{
+	height: 200px;
+	width: 250px;
+	background-color: #fff;
+	-webkit-box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.33);
+	-moz-box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.33);
+	box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.33);
+	color: var(--primary-color);
+	border:3px solid var(--primary-color);
+}
+
+.box p{
+	padding-top: 20px;
+	font-size: 60px;
+}
+
+.panel-box{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+/*-----end-socios----*/
+
+
 /*-----start-about----*/
 .about{
 	background:url(../images/about-bg.jpg);

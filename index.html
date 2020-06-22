@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Fidelicoins</title>
+<title>FIDELICOINS</title>
+<link rel="icon" href="images/icon-gold.svg" type = "image/x-icon">
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/styleSlider.css" rel='stylesheet' type='text/css' />
 <link href="/css/fontawesome/css/all.css" rel="stylesheet">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
+<script src="./js/count/countUp.min.js" type="module"></script>
+<script src="js/counter.js"></script>
 <!---- start-smoth-scrolling---->
-<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript" src="css/fontawesome/js/all.js"></script>
@@ -54,11 +56,25 @@
 					window.location.href = "#plane";
 				}
 				}
+
+	
+					$(window).load(function() {
+						$(".show-loading").fadeOut("slow");
+					});
+
 		</script>
 
 		<!----//End-top-nav-script---->
 </head>
 	<body>
+		<!-- loading start -->
+		<div class="show-loading">
+
+				<img class="imgsize" src="images/icon-fc2.png" alt="">
+				
+		</div>
+		
+		<!-- loading end -->
 		<!-----start-container----->
 			<!----- start-header---->
 			<div id="home" class="header navColor fixed">
@@ -274,6 +290,8 @@
 							</div>
 						</div>
 		<!---- //End-about----->
+
+		
 		<!-----start-portfolio---->
 		<div id="port" class="portfolio-box-main">
 			<div class="container">
@@ -726,6 +744,43 @@
          	</div>
          </div>
 		 <!----//End-team----->
+
+				<!---- start-about----->
+				<div id="socios" class="socios" >
+					<div class="container">
+					<div class="row" style="margin-bottom: 20px;">
+						<div class="text-center">
+							<h2>Contamos con sedes en todo el país</h2>
+							<h4>Únete a las miles de personas en todo el país que están haciendo crecer su negocio con Fidelicoins</h4>
+						</div>
+					</div>
+
+					
+							<div class="panel-socios text-center">
+								<div class="row">
+									<div class="col-md-4 panel-box">
+										<div class="box" >
+											<h2>Empresas</h2>
+											<p class="timer count-title count-number" data-to="200" data-speed="4500"></p>
+										</div>
+									</div>
+									<div class="col-md-4 panel-box">
+										<div class="box">
+											<h2>Estados</h2>
+											<p class="timer count-title count-number" data-to="5" data-speed="4500" ></p>
+										</div>
+									</div>
+									<div class="col-md-4 panel-box">
+										<div class="box">
+											<h2>Clientes</h2>
+											<p class="timer count-title count-number" data-to="800" data-speed="4500" ></p>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		<!---- //End-about----->
 
          <!----start-contact---->
          <div id="contact" class="contact">
