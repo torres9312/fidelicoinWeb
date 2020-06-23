@@ -1088,7 +1088,7 @@ nav a#pull {
 	border:3px solid var(--primary-color);
 }
 
-.box p{
+.box span{
 	padding-top: 20px;
 	font-size: 60px;
 }
@@ -1768,12 +1768,40 @@ span.default_line {
  .callbacks_tabs {
 	left: 46%;
  }
-} 
+}
+
 @media (max-width:1200px){
+	.btn-register{
+		padding-left: 10px;
+	}
+	.btn-enter{
+		padding-left: 0px;
+	}
+	
+   }
+
+   @media (max-width:1065px){
+	.nav-btn{
+		width: 220px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.top-nav{
+		width: 600px;
+	}
+   
+   }
+
+
+@media (max-width:1345px){
 
 nav {
 	position: relative;
 	float: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
  .top-nav ul li a {
 	padding: 0.2em 1.2em;

@@ -7,14 +7,14 @@
 <link href="css/styleSlider.css" rel='stylesheet' type='text/css' />
 <link href="/css/fontawesome/css/all.css" rel="stylesheet">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<script src="./js/count/countUp.min.js" type="module"></script>
-<script src="js/counter.js"></script>
+
 <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript" src="css/fontawesome/js/all.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+
+
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -108,10 +108,10 @@
 					<div class="col-md-3 nav-btn" style="
 					text-align: right;">
 						<div class="row alignRow">
-							<div class="col-sm-6">
+							<div class="col-sm-6 btn-enter">
 								<button class="btn btn-primary btn-second">Entrar</button>
 							</div>
-							<div class="col-sm-6 " style="text-align: left; padding-left: 0px;" >
+							<div class="col-sm-6 btn-register" style="text-align: left; padding-left: 0px;" >
 								<button class="btn btn-primary btn-first" style="padding-left: 20px; padding-right: 20px;">Registrar</button>
 							</div>						
 						</div>
@@ -744,7 +744,6 @@
          	</div>
          </div>
 		 <!----//End-team----->
-
 				<!---- start-about----->
 				<div id="socios" class="socios" >
 					<div class="container">
@@ -755,25 +754,24 @@
 						</div>
 					</div>
 
-					
-							<div class="panel-socios text-center">
+							<div id="panel-socios" class="panel-socios text-center">
 								<div class="row">
 									<div class="col-md-4 panel-box">
 										<div class="box" >
 											<h2>Empresas</h2>
-											<p class="timer count-title count-number" data-to="200" data-speed="4500"></p>
+											<span class="count-data">300</span>
 										</div>
 									</div>
 									<div class="col-md-4 panel-box">
 										<div class="box">
 											<h2>Estados</h2>
-											<p class="timer count-title count-number" data-to="5" data-speed="4500" ></p>
+											<span class="count-data">5</span>
 										</div>
 									</div>
 									<div class="col-md-4 panel-box">
 										<div class="box">
 											<h2>Clientes</h2>
-											<p class="timer count-title count-number" data-to="800" data-speed="4500" ></p>
+											<span class="count-data">800</span>
 										</div>
 									</div>
 							</div>
@@ -846,6 +844,12 @@
          </div>
          <!-----//End-footer---->
 		<!-----//End-container----->
+
+		<!-----//CONTADOR---->
+		<script src="js/jquery.waypoints.js"></script>
+		<script src="js/jquery.rcounterup.js"></script>
+		<script src="js/active.js"></script>
 	</body>
+
 </html>
 
