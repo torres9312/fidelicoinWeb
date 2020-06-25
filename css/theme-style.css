@@ -580,6 +580,10 @@ nav a#pull {
 	.pr-20{
 		padding-left: 25px;
 	}
+	
+	.drop-actions{
+		display: none;
+	}
 
 	.btn-mobile{
 		display: block;
@@ -604,10 +608,11 @@ nav a#pull {
 }
 
 
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 1020px) {
 	.nav-menu {
 		display: inline-block;
-		font-size: 90%;
+		font-size: 95%;
 	}
 
 	.nav-logo{
@@ -615,14 +620,88 @@ nav a#pull {
 		
 	}
 
+	.logo-img{
+		width: 200px;
+	}
+
 
 	.btn-mobile{
+
+			display: inline-block;
+			width: 19%;
+			float: right;
+	}
+
+}
+
+
+@media screen and (max-width: 960px) {
+	
+	.btn-first{
+		display: none;
+	}
+
+	.btn-second{
+		display: none;
+	}
+
+	.btn-mobile{
+		text-align: end;
+	}
+
+	.drop-actions{
+		display: block;
+
+	}
+
+	.drop-actions button{
+		color: white!important;
+		margin-top: 20px;
+		background-color: #011222!important;
+		border-color: #fff;
+		border-width: 1px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 2px;
+		padding-bottom: 10px!important;
+		height: 30px;
+		font-size: 14px;
+		font-weight: 400;
+		font-family: "ManropeBold";
+	}
+
+	.drop-actions button:hover{
+		background-color: #FFFFFF!important;
+		color: var(--primary-color)!important;
+	}
+
+	.dropdown-menu.show{
+		display: flex!important;
+		flex-direction: column;
+	}
+
+	.dropdown-menu >.dropdown-item{
+		text-align: center;
+	}
+
+	.drop-actions > .dropdown-menu{
+		background-color: var(--primary-color);
+		
+	}
+
+	.drop-actions > .dropdown-menu > a{
+		color: #fff!important;
+		
 	}
 }
 
 
+@media screen and (max-width: 868px) {
+		
+	.drop-actions{
+		display: none;
+	}
 
-@media screen and (max-width: 768px) {
 	nav { 
   		height: auto;
 		  float:none;
@@ -645,11 +724,6 @@ nav a#pull {
 	  	width: 100%;
 	  	text-indent: 25px;
 	  }
-	  
-
-	  
-
-
 
 	  
 }
@@ -659,7 +733,12 @@ nav a#pull {
 
 
 /*Styles for screen 515px and lower*/
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 868px) {
+		
+	.drop-actions{
+		display: none;
+	}
+
 	nav {
 		border-bottom: 0;
 		float:none;
@@ -741,6 +820,18 @@ nav a#pull {
 		padding-left: 0px;
 		margin-top: 20px;
 		background-color: var(--primary-color);
+		width: -webkit-fill-available;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.modalDialog > div{
+		width: 90%!important;
+	}
+
+	.top-nav{
+		width: 100%;
 	}
 	.btn-mobile{
 		display: none;
@@ -750,6 +841,9 @@ nav a#pull {
 		width: 226px;
 	}
 	
+	.top-nav ul li a span {
+		background-color: var(--primary-color);
+	}
 }
 
 @media only screen and (max-width : 568px) {
