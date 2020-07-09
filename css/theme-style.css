@@ -197,11 +197,11 @@
 
 .hover-list:hover{
 	cursor: pointer;
-	-moz-transform: scale(1.05);
-	-webkit-transform: scale(1.05);
-	-o-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
+	-moz-transform: scale(1.04);
+	-webkit-transform: scale(1.04);
+	-o-transform: scale(1.04);
+	-ms-transform: scale(1.04);
+	transform: scale(1.04);
 }
 
 
@@ -555,7 +555,22 @@ nav a#pull {
 	.container {
 		width: 90%;
 	}	
+}
 
+@media screen and (max-width: 1200px) {
+	.title-secondary-m2:after{
+		border-left: 70px solid transparent;
+		border-right: 58px solid transparent;
+	}
+	.title-secondary:after{
+		border-left: 26px solid transparent;
+		border-right: 23px solid transparent;
+		border-top: 19px solid #011222;
+	}
+
+	.listPlane h4{
+		font-size: 15px;
+	}	
 }
 /*Styles for screen 600px and lower*/
 
@@ -632,6 +647,18 @@ nav a#pull {
 			float: right;
 	}
 
+}
+
+
+@media screen and (max-width: 991px) {
+	.title-secondary:after, .title-secondary-m2:after{
+		display: none;
+	}
+	
+	.title-secondary-m2{
+		height: 90px;
+	}
+	
 }
 
 
@@ -844,6 +871,21 @@ nav a#pull {
 	.top-nav ul li a span {
 		background-color: var(--primary-color);
 	}
+
+	.hover-list:hover{
+		cursor: pointer;
+		transform: none;
+	}
+	
+	
+.title-secondary:after, .title-secondary-m2:after{
+	display: none;
+}
+
+.title-secondary-m2{
+	height: 90px;
+}
+
 }
 
 @media only screen and (max-width : 568px) {
@@ -1962,6 +2004,9 @@ span.default_line {
 	.top-nav{
 		width: 600px;
 	}
+
+	
+	
    
    }
 
