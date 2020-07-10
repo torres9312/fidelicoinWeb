@@ -19,6 +19,13 @@
 
 }
 
+@font-face
+{
+    font-family:'StagSans';
+    src:url('./fonts/StagSans-Light.ttf');
+
+}
+
 :root{
 	--primary-color:#011222!important;
 }
@@ -39,6 +46,9 @@
 	display: none;
 }
 
+.flow-content{
+	overflow: auto;
+}
 
 
 .show-loading {
@@ -264,7 +274,45 @@
 
 }
 
+.section-main{
+	margin-top:60px;
+	color:#fff;
+}
 
+.img-logo{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:100%;
+	display: block;
+	text-align: center;
+}
+
+.section-main img{
+	width: 100%;
+	height: 300px;
+}
+
+.main-paralax{
+	height: 600px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url("../images/p6.jpg");
+}
+
+.back-paralax{
+		background: rgba(1, 18, 34, .92); width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		bottom:0;
+}
 
 .content-plan{
 	margin-bottom: 20px;
@@ -315,7 +363,7 @@ label{
 html, body{
     font-family: "Manrope";
     font-size: 100%;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 body a{
 	transition:0.5s all;
@@ -574,6 +622,43 @@ nav a#pull {
 }
 /*Styles for screen 600px and lower*/
 
+/* timeline */
+.card{
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+	background: #f1f1f1;
+	margin-bottom: 2rem;
+
+}
+.card img{
+	width: 100%;
+	height: 400px;
+}
+
+
+.card > div {
+	padding: 2rem;
+  }
+
+  .card:nth-child(even) img {
+	order: 2;
+  }
+
+
+  .card button{
+	  background-color: var(--primary-color);
+	  color: white;
+	  font-family: "ManropeBold";
+  }
+
+  
+  @media(max-width:600px) {
+	.card {
+	  display: block;
+	}
+}
+  
 
 
 
@@ -960,6 +1045,7 @@ nav a#pull {
   padding: 10px 0;
   text-align: center;
   width: 100%;
+  height: 100%;
 }
 .rslides_tabs li {
   display: inline;
@@ -987,6 +1073,7 @@ nav a#pull {
 }
 .slider-content{
 	padding-top: 65px;
+
 }
 .callbacks_container {
   position: relative;
@@ -1221,19 +1308,13 @@ nav a#pull {
 /*-----start-services----*/
 .services{
 	padding: 3em 0;
-	background-color: #011222;
 }
 .services-grid{
 	margin-top:2em;
 }
 .services-head h3{
 	text-transform: uppercase;
-	color: #D5AD6D; /*if no support for background-clip*/
-	background: -webkit-linear-gradient(transparent, transparent),
-	-webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
-	background: -o-linear-gradient(transparent, transparent);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #ffffff; /*if no support for background-clip*/
 	font-weight: 700;
 	font-size: 1.6em;
 	margin: 0 0 0.5em 0;
