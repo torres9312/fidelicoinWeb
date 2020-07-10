@@ -298,18 +298,19 @@
 }
 
 .main-paralax{
-	height: 600px;
+
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-image: url("../images/p6.jpg");
+	/*background-image: url("../images/back-paralax.jpg");*/
+	background-color: var(--primary-color);
 }
 
 .back-paralax{
-		background: rgba(1, 18, 34, .92); width:100%;
+		background: rgba(1, 18, 34, .96); width:100%;
 		height:100%;
-		position:absolute;
+		display: inline-block;
 		top:0;
 		bottom:0;
 }
@@ -363,7 +364,8 @@ label{
 html, body{
     font-family: "Manrope";
     font-size: 100%;
-    background-color: #fff;
+	background-color: #fff;
+	overflow: auto;
 }
 body a{
 	transition:0.5s all;
@@ -411,6 +413,14 @@ body a{
     width: 21.5%;
 }
 
+}
+
+@media screen and (max-width: 992px)
+{
+	.main-text{
+		margin-top: 60px;
+		
+	}
 }
 
 
@@ -638,8 +648,20 @@ nav a#pull {
 
 
 .card > div {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	padding: 2rem;
+
   }
+
+  .card h3{
+	font-size:30px;
+	font-family: "ManropeBold";
+  }
+
+
 
   .card:nth-child(even) img {
 	order: 2;
@@ -650,6 +672,12 @@ nav a#pull {
 	  background-color: var(--primary-color);
 	  color: white;
 	  font-family: "ManropeBold";
+	  border-color: var(--primary-color);
+  }
+
+  .card button:hover{
+	  background-color: white;
+	  color: var(--primary-color);
   }
 
   
@@ -2152,6 +2180,10 @@ nav {
  }
 }
 @media (max-width:800px){
+
+.card h3{
+	font-size: 25px;
+}
 .top-nav ul li a {
 	padding: 0.2em 1.2em;
 	font-size: 0.8125em;
