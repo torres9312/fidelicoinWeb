@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     var status = $('#status-branch').val();
 
-        $('#btn-play').click(function(e){
+        $('.btn-play').click(function(e){
 
             $('#btn-play').css('pointer-events', 'none');
 
