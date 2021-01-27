@@ -7,6 +7,9 @@
 <link href="css/styleSlider.css" rel='stylesheet' type='text/css' />
 <link href="/css/fontawesome/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" type="text/css" href="css/navstylechange.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="js/leader-line.css" media="screen" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
 <!---- start-smoth-scrolling---->
@@ -15,9 +18,13 @@
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript" src="js/anime.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<script type="text/javascript" src="css/fontawesome/js/all.js"></script>
 
+<script type="text/javascript" src="css/fontawesome/js/all.js"></script>
+<script type="text/javascript" src="js/leader-line.min.js"></script>
+
+
+<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
 
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
@@ -31,9 +38,9 @@
 		</script>
 		<!---- start-smoth-scrolling---->
 		 <!-- Custom Theme files -->
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
    		 <!-- Custom Theme files -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
 		<!----webfonts---->
@@ -171,88 +178,227 @@
 			  </script>
 			<!----//End-slider-script---->
 			<!-- Slideshow 4 -->
-			    <div  id="top" class="callbacks_container slider-content">
-			      <ul class="rslides" id="slider4">
-			        <li>
-			          <img src="images/paper1.jpg" alt="">
-			          <!-- <div class="caption text-center">
-			          	<div class="slide-text-info">
-			          		<h1>Gestión de clientes</h1>
-			          		<div class="slide-text">
-			          			<p>Descripcion del producto</p>
-			          		</div>	
-			          	</div>
-			          </div> -->
-			        </li>
-			        <li>
-					  <img src="images/paper2-800.jpg" alt="">
-					  <!-- 
-			          	<div class="slide-text-info">
-							<h1>Gestión de clientes</h1>
-							<div class="slide-text">
-								<p>Descripcion del producto</p>
-							</div>
-			          	</div>
-			          </div> -->
-			        </li>
-			        <li>
-			          <img src="images/paper1.jpg" alt="">
-			          <!--  <div class="caption text-center">
-			           	<div class="slide-text-info">
-							<h1>Gestión de clientes</h1>
-							<div class="slide-text">
-								<p>Descripcion del producto</p>
-							</div>
-			          </div> -->
-			        </li>
-			      </ul>
-			    </div>
+			<div class="tp-banner-container" style="height: 100vh">
+				<div class="tp-banner fullscreenbanne"  >
+					<ul>
+			
+					<!-- SLIDE  -->
+					<li data-transition="zoomout" data-slotamount="2"  data-masterspeed="1000"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7">
+								<!-- MAIN IMAGE -->
+								<img src="/images/slider1.jpg"  alt="video_forest"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+								<!-- LAYERS -->
+			
+								
+			
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption large_bold_white_25 customin customout tp-resizeme text-slider"
+									data-x="right" data-hoffset="0"
+									data-y="bottom"
+									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-speed="700"
+									data-start="1800"
+									data-easing="Power4.easeOut"
+									data-endspeed="700"
+									data-endeasing="Power0.easeIn"
+									style="z-index: 3">
+										<p>Fidelizacion</p>
+										<h2>Incrementa tus ventas y recompensa a tus clientes</h2>
+								</div>
+			
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption customin customout tp-resizeme "
+								data-x="center" data-hoffset="0"
+								data-y="bottom" data-voffset="-140"
+								data-customin="x:60;y:30;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformOrigin:50% 50%;"
+								data-customout=""
+								data-speed="700"
+								data-start="1000"
+								data-easing="Power4.ease"
+								data-endspeed="700"
+								data-endeasing="Power0.easeIn"
+								style="z-index: 2; ">
+
+									<div class="slider1-img">
+										<img src="/images/mockup.png" width="100%" alt="">
+									</div>
+								</div>
+							</li>
+			
+			
+							<!-- SLIDE  -->
+					<li data-transition="zoomout" data-slotamount="2" data-masterspeed="1000"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="2">
+								<!-- MAIN IMAGE -->
+								<img src="/images/slider2.jpg"  alt="video_forest"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+								<!-- LAYERS -->
+			
+			
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption large_bold_white_25 customin customout tp-resizeme text-slider"
+									data-x="center" data-hoffset="0"
+									data-y="170"
+									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-speed="700"
+									data-start="1400"
+									data-easing="Power4.easeOut"
+									data-endspeed="700"
+									data-endeasing="Power0.easeIn"
+									style="z-index: 3">The clearest way into the Universe<br/>is through a forest wilderness.
+			
+								</div>
+			
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption medium_text_shadow customin customout tp-resizeme subtitle-slider"
+									data-x="center" data-hoffset="0"
+									data-y="bottom" data-voffset="-140"
+									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-speed="700"
+									data-start="1700"
+									data-easing="Power4.easeOut"
+									data-endspeed="700"
+									data-endeasing="Power0.easeIn"
+									style="z-index: 4; ">John Muir
+								</div>
+							</li>
+					<li data-transition="zoomout" data-slotamount="2" data-masterspeed="1000"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="2">
+								<!-- MAIN IMAGE -->
+								<img src="/images/slider-img1.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+								<!-- LAYERS -->
+			
+			
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption large_bold_white_25 customin customout tp-resizeme text-slider"
+									data-x="center" data-hoffset="0"
+									data-y="170"
+									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-speed="700"
+									data-start="1400"
+									data-easing="Power4.easeOut"
+									data-endspeed="700"
+									data-endeasing="Power0.easeIn"
+									style="z-index: 3">The clearest way into the Universe<br/>is through a forest wilderness.
+			
+								</div>
+			
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption medium_text_shadow customin customout tp-resizeme subtitle-slider"
+									data-x="center" data-hoffset="0"
+									data-y="bottom" data-voffset="-140"
+									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									data-speed="700"
+									data-start="1700"
+									data-easing="Power4.easeOut"
+									data-endspeed="700"
+									data-endeasing="Power0.easeIn"
+									style="z-index: 4;font-size: 14px!important;">John Muir
+								</div>
+							</li>
+					
+					</ul>
+			
+					<div class="tp-bannertimer"></div>
+				</div>
+			</div>
 			    <div class="clearfix"> </div>
 			<!----- //End-slider---->
+
+
+			<script type="text/javascript">
+    
+				var revapi;
+			
+				$(document).ready(function() {
+			
+					   revapi = $('.tp-banner').revolution(
+						{
+							delay:6000,
+							startwidth:1170,
+							startheight: 500,
+							fullScreen:"on",
+							forceFullWidth:"on",
+							minFullScreenHeight:"820",
+							videoJsPath:"src/videojs/",
+							fullScreenOffsetContainer: "header",
+							hideArrowsOnMobile: "off",
+							hideThumbs : "off",
+							autoplay: "off",
+							navigationArrows:"solo",
+							hideArrowsOnMobile:"on",
+							keyboardNavigation:"on",
+							parallax:"on",
+							hideTimerBar:"on",
+								
+						});
+			
+				});	//ready
+			
+			</script>
 			<!----start-services---->
 			<div id="ser" class="main-section" >
-				<div >
-					<div class="text-center">
-						<h2 style="color: #fff; margin:0px;padding-top: 20px;">¿QUE ES FIDELICOINS?</h2>
-					</div>
-					<div class="container" style="margin: 50px;  height: 750; position: relative; display: flex;justify-content: center;align-items: center;">
-						
-						<div class="demo" style="color: #fff;">
-								<input type="text" id="status-branch" value="0" hidden>
-								<div class=""><img class="btn-action btn-play" id="btn-play" src="images/coin.png" alt=""></div>
-								<div class=""><img class="btn-play" id="click" src="images/mano.gif" alt=""></div>
-								<div class="box-animated-1 hidde" ><img width="100%" src="images/icon1.png" alt=""></div>
-								<div class="box-animated-2 hidde" ><img width="100%" src="images/icon2.png" alt=""></div>
-								<div class="box-animated-3 hidde"  ><img width="100%" src="images/icon3.png" alt=""></div>
 
-								<svg  height="700" width="850" style="margin-top: 100px;" >
-									<path  class="line1 hidde" stroke-width="5px" d="M 250 350 C 200 250 350 200 350 100" stroke="rgb(191,149,63)" fill="none"/>
-									<path  class="line2 hidde" stroke-width="5px" d="M 250 350 C 400 200 550 350 650 150" stroke="rgb(191,149,63)" fill="none"/>
-									<path  class="line3 hidde" stroke-width="5px" d="M 250 350 C 550 250 600 550 780 450" stroke="rgb(191,149,63)" fill="none"/>
-								</svg>
-						</div>
-
-						
+				<!-- <button class="btn-primary" id="btn-action">
+					Click here
+				</button>
+				<div class="box-animate">
+					<div id="element1">
+						left
 					</div>
-				</div>		
+					<div id="element2">
+						right
+					</div>
+				</div> -->
+				
+				<div class="text-center">
+					<div class="title mb-3">
+						<h1>¿SABES QUE ES FIDELICOINS?</h1>
+						<p>Descubre lo que Fidelicoins tiene para ti</p>
+					</div>
+					<div class="action-anim text-center">
+						<div><img class="btn-action" id="play-animate"  src="images/coin.png" alt=""></div>
+						<div class="gif-hand"><img width="100%"  src="images/mano.gif" alt=""></div>
+					</div>
+				</div>
+
+				<div class="container box-content-animate">
+					<div class="element-box">
+						<div class="item-anim" id="anim1"><img width="100%" src="images/icon1.png" alt=""></div>
+						<div class="item-anim" id="anim2"><img width="100%" src="images/icon2.png" alt=""></div>
+					</div>
+					<div class="element-box">
+						<div class="item-anim" id="anim3"><img width="100%" src="images/icon3.png" alt=""></div>
+						<div class="item-anim" id="anim4"><img width="100%" src="images/icon4.png" alt=""></div>
+					</div>
+					<div class="element-box">
+						<div class="item-anim" id="anim5"><img width="100%" src="images/icon5.png" alt=""></div>
+						<div class="item-anim" id="anim6"><img width="100%" src="images/icon6.png" alt=""></div>
+					</div>
+				</div>
+				
+				
 			</div>
 			<!----//End-services---->
 			<!-----//End-services-grids---->
 		
 		<!---- start-timeline----->
 
-		<main class="container flow-content" style="margin-bottom: 30px; margin-top: 50px;">
+		<main class="container flow-content" style="margin-bottom: 30px; margin-top: 50px;overflow: hidden;">
 			<div class="team-head text-center" style="margin-bottom: 80px;">
 				<h3 style="color: #011222;">El camino al éxito.</h3>
 				<p>Para que tu empresa alcance el verdadero éxito deberá seguir los
 					siguientes pasos:</p>
 			</div>
 			<a href="#modastep1">
-				<section class="card text-items" id="step1" data-aos="fade-left" >
-					<img class="hover-img" src="images/svg/gestion.jpeg" alt="">
-					<div >
-						<h3>1.	Obtén la fidelidad de tus clientes al fidelizarlos. ¿Sabes lo que implica? </h3>
-					</div >
+				<section  id="step1" data-aos="fade-left" >
+					<div class="card text-items">
+						<img class="hover-img" src="images/svg/gestion.jpeg" alt="">
+						<div >
+							<h3>1.	Obtén la fidelidad de tus clientes al fidelizarlos. ¿Sabes lo que implica? </h3>
+						</div >
+					</div>
 					
 				</section>
 			</a>
@@ -290,11 +436,13 @@
 			</div>
 
 			<a href="#modalstep2">
-				<section class="card text-items" data-aos="fade-right ">
-					<div>
-						<h3>2. Elige el mejor programa con las herramientas que necesitas, elige Fidelicoin. </h3>
+				<section  data-aos="fade-right ">
+					<div class="card text-items">
+						<div>
+							<h3>2. Elige el mejor programa con las herramientas que necesitas, elige Fidelicoin. </h3>
+						</div>
+						<img class="hover-img" src="images/svg/repair.jpeg" alt="">
 					</div>
-					<img class="hover-img" src="images/svg/repair.jpeg" alt="">
 				</section>
 			</a>
 			<!-- STEP2 -->
@@ -338,10 +486,12 @@
 			</div>
 
 			<a href="#modalstep3">
-				<section class="card text-items" data-aos="fade-left">
-					<img class="hover-img" src="images/svg/config.jpeg" alt="">
-					<div >
-						<h3>3.- Adapta y configura fácilmente el sistema a tus necesidades.</h3>
+				<section  data-aos="fade-left">
+					<div class="card text-items">
+						<img class="hover-img" src="images/svg/config.jpeg" alt="">
+						<div >
+							<h3>3.- Adapta y configura fácilmente el sistema a tus necesidades.</h3>
+						</div>
 					</div>
 				</section>
 			</a>
@@ -394,11 +544,13 @@
 				</div>
 	
 			<a href="#modalstep4">
-			<section class="card text-items" data-aos="fade-right">
-				<div >
-					<h3>4. Elige las recompensas que tus clientes recibirán por su fidelidad</h3>
+			<section  data-aos="fade-right">
+				<div class="card text-items">
+					<div >
+						<h3>4. Elige las recompensas que tus clientes recibirán por su fidelidad</h3>
+					</div>
+					<img class="hover-img" src="images/svg/check.jpeg" alt="">
 				</div>
-				<img class="hover-img" src="images/svg/check.jpeg" alt="">
 			</section>
 			</a>
 				<!-- STEP2 -->
@@ -435,12 +587,14 @@
 				</div>
 	
 			<a href="#modalstep5">
-				<section class="card text-items" data-aos="fade-left">
-					<img class="hover-img" src="images/svg/app_cliente.jpeg" alt="">
-					<div >
-						<h3>5. Regístrate en la app móvil de Fidelicoin. Disponible para tus clientes y
-							personal.</h3>
-					</div>	
+				<section  data-aos="fade-left">
+					<div class="card text-items">
+						<img class="hover-img" src="images/svg/app_cliente.jpeg" alt="">
+						<div >
+							<h3>5. Regístrate en la app móvil de Fidelicoin. Disponible para tus clientes y
+								personal.</h3>
+						</div>	
+					</div>
 				</section>		
 			</a>
 				<!-- STEP2 -->
@@ -482,12 +636,14 @@
 				</div>
 	
 				<a href="#modalstep6">	
-					<section class="card text-items" id="step6" data-aos="fade-right">
-						<div >
-							<h3>6. Monitorea en tiempo real cada transacción y movimiento que se realice en el
-								sistema.</h3>
+					<section  id="step6" data-aos="fade-right">
+						<div class="card text-items">
+							<div >
+								<h3>6. Monitorea en tiempo real cada transacción y movimiento que se realice en el
+									sistema.</h3>
+							</div>
+							<img class="hover-img" src="images/svg/estadistics.jpeg" alt="">
 						</div>
-						<img class="hover-img" src="images/svg/estadistics.jpeg" alt="">
 					</section>
 				</a>
 				<!-- STEP2 -->
@@ -523,11 +679,13 @@
 				</div>
 	
 				<a href="#modalstep7">
-					<section class="card text-items" data-aos="fade-left" style="background-color:#fff">
-						<img class="hover-img" src="images/svg/recompensas.jpeg" alt="">
-						<div >
-							<h3>7. Promueve el consumo de tus productos y/o servicios por medio del sistema de
-								gamificación.</h3>
+					<section  data-aos="fade-left" style="background-color:#fff">
+						<div class="card text-items">
+							<img class="hover-img" src="images/svg/recompensas.jpeg" alt="">
+							<div >
+								<h3>7. Promueve el consumo de tus productos y/o servicios por medio del sistema de
+									gamificación.</h3>
+							</div>
 						</div>
 					</section>
 				</a>
@@ -564,11 +722,13 @@
 				</div>
 	
 				<a href="#modalstep8">
-					<section class="card text-items" data-aos="fade-right">
-						<div >
-							<h3>8. Entra al sistema de Coalición y crece junto con otras marcas reconocidas.</h3>
+					<section  data-aos="fade-right">
+						<div class="card text-items">
+							<div >
+								<h3>8. Entra al sistema de Coalición y crece junto con otras marcas reconocidas.</h3>
+							</div>
+							<img class="hover-img" src="images/svg/app_money.jpeg" alt="">
 						</div>
-						<img class="hover-img" src="images/svg/app_money.jpeg" alt="">
 					</section>
 				</a>
 				<!-- STEP2 -->
@@ -944,6 +1104,7 @@
 		<script src="js/jquery.waypoints.js"></script>
 		<script src="js/jquery.rcounterup.js"></script>
 		<script src="js/active.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 			AOS.init({

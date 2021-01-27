@@ -46,16 +46,17 @@
 
 #btn-play{
 	position: absolute;
-	top:430px; 
-	right:850px;
+
 	
 }
 
 #click{
 	position: absolute;
-	bottom: 130px; 
-	right: 850px;
-	width: 140px;
+	
+}
+
+.gif-hand{
+	width: 80px;
 }
 
 .hidde{
@@ -100,6 +101,10 @@
 
 }
 
+.box-content-animate .element-box:nth-child(5).item-anim:nth-child(5){
+	left: 5em;
+}
+
 .btn-mobile{
 	display: none;
 }
@@ -112,9 +117,39 @@
 .main-section{
 	margin: 0;
 	background-color: var(--primary-color);
-	height: 800px;
+	height: 400px;
 	position: relative;
+	width: 100%;
+	padding: 2em;
+	transition: all .7s ease;
 }
+
+.item-anim{
+	width: 100px;
+}
+
+.box-content-animate{
+	width: 100%;
+	padding: 3em 0 3em 0;
+
+}
+
+.box-content-animate .element-box:nth-child(1),.element-box:nth-child(2){
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3em;
+}
+
+.box-content-animate .element-box:nth-child(3){
+	display: flex;
+	justify-content: center;
+}
+
+.box-content-animate .element-box:nth-child(3) .item-anim:nth-child(2){
+	margin-left: 4em;
+}
+
+
 
 .show-loading {
     position: fixed;
@@ -244,9 +279,27 @@
 	cursor: pointer;
 }
 
+.title{
+	margin-bottom: 2em;
+}
+
+.title h1{
+	font-family: "ManropeBold" ;
+	color: var(--golden);
+	font-weight: 600;
+	margin-bottom: .5em;
+}
+.title p{
+	font-family: "ManropeBold" ;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: .5em;
+}
+
 .title-secondary-m2{
+	clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
 	background-color: #011222;
-	height: 80px;
+	height: 100px;
 	color: white;
 	position: relative;
 	padding-top: 5px;
@@ -261,7 +314,33 @@
 	
 }
 
+.action-anim{
+	position: relative;
+}
 
+.gif-hand{
+	position: absolute;
+	top: 80px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 5em;
+	right: 0;
+	text-align: center;
+	
+}
+
+.card .text-items:hover{
+	-moz-transform: scale(1.10);
+	-webkit-transform: scale(1.10);
+	-o-transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	transition: all .07s ease!important;
+}
+
+.container .flow-content a{
+	transition: all 0.7s ease!important;
+}
 
 .flow-content .card:hover{
 	cursor: pointer;
@@ -336,6 +415,7 @@
 
 
 .title-secondary{
+	clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
 	background-color: #011222;
 	height: 80px;
 	color: white;
@@ -380,6 +460,31 @@
 .section-main img{
 	width: 100%;
 	height: 300px;
+}
+
+.container .flow-content{
+	transition: all 4s ease-in-out;
+}
+
+.box-animate{
+	position: relative;
+	margin: 0 10em;
+	height: 100%;
+}
+
+#element1{
+	position: absolute;
+	background-color: lightcoral;
+	width: 80px;
+	bottom: 0;
+	
+}
+#element2{
+	position: absolute;
+	top: 0;
+	background-color: lightcyan;
+	width: 80px;
+	right: 0;
 }
 
 
@@ -476,6 +581,7 @@ body a:hover, a:active{
 	-webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.61);
 	-moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.61);
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.61);
+	z-index: 9999;
 	
 }
 
@@ -494,6 +600,13 @@ body a:hover, a:active{
 }
 .logo320{
 	display:none;
+}
+
+.slider1-img{
+	position: absolute;
+	bottom: 30%;
+	right: 0;
+	width: 600px;
 }
 
 
