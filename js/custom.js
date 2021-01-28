@@ -7,12 +7,12 @@ $(document).ready(function(){
     
         var status = 0;
         var startPoint = document.getElementById('play-animate'),
-            firstPoint = document.getElementById('anim1'),
-            secondPoint = document.getElementById('anim2'),
-            thirdPoint = document.getElementById('anim3'),
-            fourtPoint = document.getElementById('anim4'),
-            fivePoint = document.getElementById('anim5'),
-            sixPoint = document.getElementById('anim6');
+            firstPoint = document.getElementById('aitem1'),
+            secondPoint = document.getElementById('aitem2'),
+            thirdPoint = document.getElementById('aitem3'),
+            fourtPoint = document.getElementById('aitem4'),
+            fivePoint = document.getElementById('aitem5'),
+            sixPoint = document.getElementById('aitem6');
 
 
         var options = {
