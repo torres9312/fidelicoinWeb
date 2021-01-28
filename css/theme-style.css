@@ -53,10 +53,10 @@
     
     }
     50%  {
-        -webkit-transform: scale(0.7);
-        -moz-transform: scale(0.7);
-        -o-transform: scale(0.7);
-        transform: scale(0.7);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
     
     }
     100% {
