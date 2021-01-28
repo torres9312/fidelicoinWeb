@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="css/navstylechange.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="js/leader-line.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/tooltip.css" media="screen" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
 <!---- start-smoth-scrolling---->
@@ -196,6 +197,7 @@
 									data-y="bottom"
 									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 									data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									
 									data-speed="700"
 									data-start="1800"
 									data-easing="Power4.easeOut"
@@ -331,6 +333,7 @@
 							keyboardNavigation:"on",
 							parallax:"on",
 							hideTimerBar:"on",
+							spinner:"off",
 								
 						});
 			
@@ -358,23 +361,53 @@
 						<p>Descubre lo que Fidelicoins tiene para ti</p>
 					</div>
 					<div class="action-anim text-center">
-						<div><img class="btn-action" id="play-animate"  src="images/coin.png" alt=""></div>
-						<div class="gif-hand"><img width="100%"  src="images/mano.gif" alt=""></div>
+						<div class="content-play"><img class="btn-action" id="play-animate"  src="images/coin.png" alt=""></div>
+						<div class="gif-hand"><img id="play-animate-hand" width="100%"  src="images/mano.gif" alt=""></div>
 					</div>
 				</div>
 
 				<div class="container box-content-animate">
 					<div class="element-box">
-						<div class="item-anim" id="anim1"><img width="100%" src="images/icon1.png" alt=""></div>
-						<div class="item-anim" id="anim2"><img width="100%" src="images/icon2.png" alt=""></div>
+						<div class="item-anim wrapper" id="anim1"><img width="100%"  src="images/icon1.png" alt=""> <div class="tooltip">Es una plataforma idealmente diseñada para
+							mejorar la rentabilidad a largo plazo de
+							cualquier empresa</div></div>
+						<div class="item-anim wrapper" id="anim2">
+							<img width="100%" src="images/icon2.png" alt="">
+							<div class="tooltip-left">Busca, principalmente, brindarte las
+							herramientas fundamentales para establecer
+							vínculos sólidos con tus clientes.</div>
+						</div>
 					</div>
 					<div class="element-box">
-						<div class="item-anim" id="anim3"><img width="100%" src="images/icon3.png" alt=""></div>
-						<div class="item-anim" id="anim4"><img width="100%" src="images/icon4.png" alt=""></div>
+						<div class="item-anim wrapper" id="anim3">
+							<img width="100%" src="images/icon3.png" alt="">
+							<div class="tooltip">Un sistema de información que almacenará la
+								información de tus clientes de la forma más
+								segura y confiable, asumiendo el firme
+								compromiso de respetar tu privacidad y la de
+								tus clientes.</div>
+						</div>
+						<div class="item-anim wrapper" id="anim4">
+							<img width="100%" src="images/icon4.png" alt="">
+							<div class="tooltip-left">Asegura la fidelidad puesto que, un cliente
+								satisfecho no siempre es un cliente fidelizado.</div>
+						</div>
 					</div>
 					<div class="element-box">
-						<div class="item-anim" id="anim5"><img width="100%" src="images/icon5.png" alt=""></div>
-						<div class="item-anim" id="anim6"><img width="100%" src="images/icon6.png" alt=""></div>
+						<div class="item-anim wrapper" id="anim5">
+							<img width="100%" src="images/icon5.png" alt="">
+							<div class="tooltip">Un sistema de gamificación que te ofrece libre
+								elección sobre cómo fidelizar a tus clientes,
+								¡elige la forma en que tus clientes serán
+								recompensados por su fidelidad!</div>
+						</div>
+						<div class="item-anim wrapper" id="anim6">
+							<img width="100%" src="images/icon6.png" alt="">
+							<div class="tooltip-left">Un óptimo sistema de registro que se
+								encargará de proporcionarte reportes
+								detallados de cada transacción que se realice
+								en el sistema.</div>
+						</div>
 					</div>
 				</div>
 				
@@ -385,7 +418,7 @@
 		
 		<!---- start-timeline----->
 
-		<main class="container flow-content" style="margin-bottom: 30px; margin-top: 50px;overflow: hidden;">
+		<main class="container flow-content" style="margin-bottom: 30px; margin-top: 50px">
 			<div class="team-head text-center" style="margin-bottom: 80px;">
 				<h3 style="color: #011222;">El camino al éxito.</h3>
 				<p>Para que tu empresa alcance el verdadero éxito deberá seguir los

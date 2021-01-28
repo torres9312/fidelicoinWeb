@@ -56,6 +56,13 @@ $(document).ready(function(){
         var anim5 = $('#anim5').hide();
         var anim6 = $('#anim6').hide();
 
+        $('.content-play').on('mouseenter',function(){
+          $('#play-animate-hand').hide()
+        });
+        $('.content-play').on('mouseleave',function(){
+          $('#play-animate-hand').show()
+        });
+
 
         $('#play-animate').on('click', function(){
 

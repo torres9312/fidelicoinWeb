@@ -44,6 +44,35 @@
   }
 
 
+  @keyframes iconscale {
+    0%   {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    
+    }
+    50%  {
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform: scale(0.7);
+    
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+  }
+
+  .item-anim img:hover{
+	-webkit-animation: iconscale 1.5s infinite;
+
+  }
+
+
 #btn-play{
 	position: absolute;
 
@@ -67,6 +96,12 @@
 	width: 150px;
 	height: 150px;
 	cursor: pointer;
+}
+
+.content-play{
+	padding: 0 0 3em 0;
+	width: 150px;
+	width: 180px;
 }
 
 
@@ -110,7 +145,7 @@
 }
 
 .flow-content{
-	overflow: auto;
+	overflow: visible;
 }
 
 
@@ -316,6 +351,10 @@
 
 .action-anim{
 	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .gif-hand{
@@ -331,15 +370,21 @@
 }
 
 .card .text-items:hover{
-	-moz-transform: scale(1.10);
-	-webkit-transform: scale(1.10);
-	-o-transform: scale(1.10);
-	-ms-transform: scale(1.10);
 	transition: all .07s ease!important;
+	-webkit-transition: all .25s ease-out;
+  -moz-transition: all .25s ease-out;
+  -ms-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
 }
 
 .container .flow-content a{
 	transition: all 0.7s ease!important;
+	-webkit-transition: all .25s ease-out;
+  -moz-transition: all .25s ease-out;
+  -ms-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
 }
 
 .flow-content .card:hover{
