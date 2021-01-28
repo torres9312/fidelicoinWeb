@@ -41,6 +41,13 @@ $(document).ready(function(){
         var line4 = new LeaderLine(startPoint,LeaderLine.pointAnchor(fourtPoint, {x: 0, y: 50}),options); 
         var line5 = new LeaderLine(startPoint,fivePoint,options); 
         var line6 = new LeaderLine(startPoint,sixPoint,options); 
+
+        line.endLabel = LeaderLine.captionLabel('Fidelizacion',{color: 'rgb(191,149,63)',outlineColor:'none'});
+        line2.endLabel = LeaderLine.captionLabel('Configuración',{color: 'rgb(191,149,63)',outlineColor:'none'});
+        line3.endLabel = LeaderLine.captionLabel('Seguridad',{color: 'rgb(191,149,63)',outlineColor:'none'});
+        line4.endLabel = LeaderLine.captionLabel('Crecimiento',{color: 'rgb(191,149,63)',outlineColor:'none'});
+        line5.endLabel = LeaderLine.captionLabel('Recompensas',{color: 'rgb(191,149,63)',outlineColor:'none'});
+        line6.endLabel = LeaderLine.captionLabel('Accesibilidad',{color: 'rgb(191,149,63)',outlineColor:'none'});
         
         line.outline = true;
         line2.outline = true;
@@ -76,29 +83,22 @@ $(document).ready(function(){
                       $('#play-animate').css('pointer-events', 'none');
                     },
                       complete: function() {
-                        line.endLabel = LeaderLine.captionLabel('Fidelizacion',{color: 'rgb(191,149,63)',outlineColor:'none'});
+                        anim5.show('slow');
+                        anim6.show('slow');
+
                         anim1.show('slow');
                         line.show('draw',optionsAnim); 
 
-                        line2.endLabel = LeaderLine.captionLabel('Configuración',{color: 'rgb(191,149,63)',outlineColor:'none'});
                         anim2.show('slow');
                         line2.show('draw',optionsAnim); 
 
-                        line3.endLabel = LeaderLine.captionLabel('Seguridad',{color: 'rgb(191,149,63)',outlineColor:'none'});
                         anim3.show('slow');
                         line3.show('draw',optionsAnim); 
                         
-                        line4.endLabel = LeaderLine.captionLabel('Crecimiento',{color: 'rgb(191,149,63)',outlineColor:'none'});
                         anim4.show('slow');
                         line4.show('draw',optionsAnim); 
-
-
-                        line5.endLabel = LeaderLine.captionLabel('Recompensas',{color: 'rgb(191,149,63)',outlineColor:'none'});
-                        anim5.show('slow');
-                        line5.show('draw',optionsAnim); 
                         
-                        line6.endLabel = LeaderLine.captionLabel('Accesibilidad',{color: 'rgb(191,149,63)',outlineColor:'none'});
-                        anim6.show('slow');
+                        line5.show('draw',optionsAnim); 
                         line6.show('draw',optionsAnim); 
 
                         status = 1;
