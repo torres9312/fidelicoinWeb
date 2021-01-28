@@ -83,9 +83,7 @@ $(document).ready(function(){
                       $('#play-animate').css('pointer-events', 'none');
                     },
                       complete: function() {
-                        anim5.show('slow');
-                        anim6.show('slow');
-
+                        
                         anim1.show('slow');
                         line.show('draw',optionsAnim); 
 
@@ -97,9 +95,12 @@ $(document).ready(function(){
                         
                         anim4.show('slow');
                         line4.show('draw',optionsAnim); 
-                        
+
                         line5.show('draw',optionsAnim); 
                         line6.show('draw',optionsAnim); 
+
+                        anim5.show('slow');
+                        anim6.show('slow');
 
                         status = 1;
                         $('.gif-hand').show();

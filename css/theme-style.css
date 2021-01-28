@@ -179,6 +179,7 @@
 .box-content-animate .element-box:nth-child(3){
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .box-content-animate .element-box:nth-child(3) .item-anim:nth-child(2){
